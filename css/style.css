@@ -5,21 +5,7 @@
     font-family: 'Didact Gothic', sans-serif;
 }
 
-.section__one{
-    background: lightblue;
-    height: 100vh;
-    position: relative;
-}
-
-.profile_background{
-    position:absolute;
-    top: 0;
-    right: 0;
-    background: red;
-    width: 50%;
-    height: 100%;
-}
-
-.my__image{
-    background: url("/img/philmon2.png")no-repeat center center/cover;
+:root{
+    --primary-color: dodgerblue;
+    --secondary-color: lightcoral;
 }
