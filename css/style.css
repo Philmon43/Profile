@@ -5,7 +5,50 @@
     font-family: 'Didact Gothic', sans-serif;
 }
 
-:root{
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
     --primary-color: dodgerblue;
     --secondary-color: lightcoral;
+}
+
+.section__Home,
+.section__about,
+.section__portfoli,
+.section__contact {
+    background: var(--primary-color);
+    height: 100vh;
+}
+
+.home_upper_section {
+    background: var(--secondary-color);
+    height: 30vh;
+    background: url("../img/hd-pattern-png-transparent-triangle-transparent-png-image-pattern-transparent-2048_1024.png") no-repeat center center/cover;
+}
+
+.home_lower_section {
+    display: flex;
+}
+
+.home_lower_sec_left,
+.home_lower_sec_right {
+    width: 100%;
+    height: 70vh;
+    padding: 2px;
+    background: #fff;
+}
+
+
+
+.my_profile_pic>img{
+    width: 250px;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.my_bio{
+    position: relative;
 }
