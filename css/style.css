@@ -3,6 +3,8 @@
     padding: 0;
     margin: 0;
     font-family: 'Didact Gothic', sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 
 html {
@@ -10,13 +12,15 @@ html {
 }
 
 :root {
-    --primary-color: dodgerblue;
+    --primary-color: #333399;
     --secondary-color: lightcoral;
+    --btn-clor: #333399;
+    --html: 80%;
+    --box_shadow: var(--box_shadow);
 }
 
 .section__Home,
 .section__about,
-.section__portfoli,
 .section__contact {
     background: var(--primary-color);
     height: 100vh;
@@ -24,7 +28,7 @@ html {
 
 .home_upper_section {
     background: var(--secondary-color);
-    height: 30vh;
+    height: 35vh;
     background: url("../img/hd-pattern-png-transparent-triangle-transparent-png-image-pattern-transparent-2048_1024.png") no-repeat center center/cover;
 }
 
@@ -34,23 +38,197 @@ html {
 
 .home_lower_sec_left,
 .home_lower_sec_right {
-    height: 70vh;
+    height: 65vh;
     padding: 2px;
-    background: #fff;
+    background: ghostwhite;
+
 }
-.home_lower_sec_left{
-    width: 30%;
+
+.home_lower_sec_left {
+    width: 35%;
 }
-.home_lower_sec_right{
-    width: 70%;
+
+.home_lower_sec_right {
+    width: 65%;
 }
-.profile_pic{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+/* .home_lower_sec_right_box, */
+.home_lower_sec_left_box {
+    height: calc(60vh + 50px);
+    margin: 0px 10px;
+    border-radius: 2px;
+    box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3);
 }
-.profile_pic>img{
+
+.profile_pic>img {
     width: 200px;
     border-radius: 50%;
     border: 2px solid white;
+}
+
+/* .home_lower_sec_right_box, */
+.home_lower_sec_left_box {
+    position: relative;
+    top: -50px;
+    background: #fff;
+}
+
+.home_lower_sec_left_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.social_links ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.social_links i {
+    font-size: 25px;
+    color: black;
+}
+
+.navbar {
+    background: #333
+}
+
+.navbar>ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 15px;
+}
+
+.navbar>ul a {
+    color: white;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 40px);
+    padding: 20px;
+}
+
+.skills_boxes {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    grid-row-gap: 15px;
+}
+
+.skills h3,
+.skills h4 {
+    padding: 20px 0;
+}
+
+
+.slide {
+    position: relative;
+    /* border: 1px solid var(--primary-color); */
+}
+
+.slide::before {
+    content: '';
+    position: absolute;
+    top: 2.5px;
+    left: 2.5px;
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    background: var(--primary-color);
+}
+
+.html::before {
+    width: calc(90% - 5px);
+    background: lightcoral;
+}
+
+.css::before {
+    width: calc(80% - 5px);
+    background: dodgerblue;
+}
+
+.javascript::before {
+    width: calc(80% - 5px);
+    background: orange;
+}
+
+.react::before {
+    width: calc(60% - 5px);
+    background: lightblue;
+}
+
+.nodejs::before {
+    width: calc(70% - 5px);
+    background: green;
+}
+
+.skills_boxes label {
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.section__about {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background: ghostwhite;
+}
+
+.section__about_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.section__about__right {
+    position: relative;
+    background: lightgray;
+    width: auto;
+}
+
+.section__about__right>img {
+    position: absolute;
+    top: 50px;
+    left: -100px;
+    width: 400px;
+    border: 1px solid black;
+}
+
+i {
+    color: #333;
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.section__contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form__container {
+    width: 30%;
+    background: #333;
+    padding: 36px;
+    border-radius: 10px;
+    color: white;
+}
+
+.form__container input,
+.form__container textarea,
+.form__container button {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    outline: none;
 }
