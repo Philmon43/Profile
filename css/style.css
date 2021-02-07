@@ -34,8 +34,23 @@ html {
 
 .home_lower_sec_left,
 .home_lower_sec_right {
-    width: 100%;
     height: 70vh;
     padding: 2px;
     background: #fff;
+}
+.home_lower_sec_left{
+    width: 30%;
+}
+.home_lower_sec_right{
+    width: 70%;
+}
+.profile_pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile_pic>img{
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
 }
