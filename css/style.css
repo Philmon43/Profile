@@ -36,6 +36,7 @@ html {
     display: flex;
 }
 
+
 .home_lower_sec_left,
 .home_lower_sec_right {
     height: 65vh;
@@ -199,14 +200,6 @@ html {
     border: 1px solid black;
 }
 
-i {
-    color: #333;
-    font-size: 25px;
-    position: sticky;
-    top: 10px;
-    right: 10px;
-    float: right;
-}
 
 .section__contact {
     position: relative;
@@ -232,4 +225,34 @@ i {
     padding: 10px;
     margin: 15px 0;
     outline: none;
+}
+
+/* Smart phone view */
+@media only screen and (max-width: 678px) {
+    
+
+    .section__Home,
+    .section__about,
+    .section__contact,
+    .home_lower_sec_left,
+    .home_lower_sec_right,
+    .form__container{
+        width: 100%;
+        height: 100%;
+    }
+    .home_lower_section{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    /* display block */
+    .section__about__right{
+        display: none;
+    }
+
+    .section__about_left {
+        width: 100vw;
+        margin: 0 auto;
+        height: 50vh;
+        text-align: center;
+    }
 }
